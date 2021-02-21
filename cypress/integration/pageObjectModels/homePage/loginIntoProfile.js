@@ -1,6 +1,6 @@
 class login{
     loginIntoSite(){
-        return cy.get('.eKtig > span')
+        return cy.get('[data-testid=svgRoot-defaultAvatar-comp-jycly90t] > svg')
     }
 
     loginButtonStart(){
@@ -19,6 +19,10 @@ class login{
         return cy.get('#input_input_passwordInput_SM_ROOT_COMP9').type(Cypress.env('sitePassword'))
     }
 
+    typeInvalidPassword(){
+        return cy.get('#input_input_passwordInput_SM_ROOT_COMP9').type(Cypress.env('incorrectPassword'))
+    }
+
     clickLogin(){
         return cy.get('#okButton_SM_ROOT_COMP9 > [data-testid=buttonElement]')
     }
@@ -35,7 +39,9 @@ class login{
         return cy.url().should('include', "https://www.alwaysonfilm.com/profile/jakedavisphotos/profile")
     }
 
-    
+    wrongPasswordWarning(){
+        return cy.get('[data-testid="siteMembers.inlineErrorMsg"]')
+    }
 }
 
 export default login

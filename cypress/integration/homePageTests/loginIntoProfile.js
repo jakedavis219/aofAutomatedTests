@@ -1,7 +1,7 @@
 require('cypress-xpath')
 require('dotenv').config()
-import openSite from './pageObjectModels/homePage/openSite'
-import login from './pageObjectModels/homePage/loginIntoProfile'
+import openSite from '../pageObjectModels/homePage/openSite'
+import login from '../pageObjectModels/homePage/loginIntoProfile'
 
 const fp = new openSite()
 const log = new login()
