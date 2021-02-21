@@ -7,7 +7,8 @@ This repo is for the automated tests of http://www.alwaysonfilm.com
     "watchForFileChanges": false,
     "env": {
         "siteUsername": "example email address",
-        "sitePassword": "password"
+        "sitePassword": "password",
+        "incorrectPassword": "123456"
     }
 }
 ```
