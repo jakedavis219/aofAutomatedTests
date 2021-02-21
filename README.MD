@@ -6,7 +6,7 @@ This repo is for the automated tests of http://www.alwaysonfilm.com
 {
     "watchForFileChanges": false,
     "env": {
-        "siteUsername": "jakedavisphotos@gmail.com",
+        "siteUsername": "example email address",
         "sitePassword": "password"
     }
 }
