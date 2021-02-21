@@ -1,6 +1,6 @@
 class login{
     loginIntoSite(){
-        return cy.get('[data-testid=svgRoot-defaultAvatar-comp-jycly90t] > svg')
+        return cy.get('.eKtig > span')
     }
 
     loginButtonStart(){
