@@ -8,23 +8,23 @@ class login{
     }
 
     loginButtonNext(){
-        return cy.get('#switchToEmailLink_SM_ROOT_COMP9 > [data-testid=buttonElement]')
+        return cy.get('#switchToEmailLink_SM_ROOT_COMP19 > [data-testid=buttonElement]')
     }
 
     typeUsername(){
-        return cy.get('#input_input_emailInput_SM_ROOT_COMP9').type(Cypress.env('siteUsername'))
+        return cy.get('#input_input_emailInput_SM_ROOT_COMP19').type(Cypress.env('siteUsername'))
     }
 
     typePassword(){
-        return cy.get('#input_input_passwordInput_SM_ROOT_COMP9').type(Cypress.env('sitePassword'))
+        return cy.get('#input_input_passwordInput_SM_ROOT_COMP19').type(Cypress.env('sitePassword'))
     }
 
     typeInvalidPassword(){
-        return cy.get('#input_input_passwordInput_SM_ROOT_COMP9').type(Cypress.env('incorrectPassword'))
+        return cy.get('#input_input_passwordInput_SM_ROOT_COMP19').type(Cypress.env('incorrectPassword'))
     }
 
     clickLogin(){
-        return cy.get('#okButton_SM_ROOT_COMP9 > [data-testid=buttonElement]')
+        return cy.get('#okButton_SM_ROOT_COMP19 > [data-testid=buttonElement]')
     }
 
     clickDropDown(){
